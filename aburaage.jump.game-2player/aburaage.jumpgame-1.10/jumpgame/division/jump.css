@@ -1,0 +1,54 @@
+:root{
+  --bg:#0b1220; 
+  --platform:#8bd3c7; 
+  --player:#ffd166; 
+  --text:#e6f0ff;
+}
+
+html, body{
+  height:100%;
+  margin:0;
+  font-family:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Segoe UI",Roboto,"Yu Gothic",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+.wrap {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+canvas {
+  width: 80vw;
+  height: 80vh;
+  max-width: 1400px;
+  max-height: 1050px;
+  background: linear-gradient(180deg,#071021 0%, #062032 60%);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+.ui{
+  position:absolute;
+  left:1450px;
+  top:100px;
+  width:350px;
+  color:var(--text);
+}
+
+h1{ margin:0 0 8px 0; font-size:30px }
+p{ margin:6px 0; font-size:30px; line-height:1.4 }
+@media(max-width:800px){
+  .wrap{ flex-direction:column }
+  .ui{ width:90vw; max-width:none }
+}
+#game{
+  position:absolute;
+  left:10px;
+  top:100px;
+}
