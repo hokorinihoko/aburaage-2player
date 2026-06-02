@@ -461,7 +461,7 @@ function loop(){
         players[1].vx += time/10+1;
     }
     if(keys["ArrowUp"] && players[1].onGround){
-        players[1].vy = -15;
+        players[1].vy = -150+time/25;
     }
     if(keys["KeyA"]){
         players[0].vx -= time/10+1;
@@ -470,7 +470,7 @@ function loop(){
         players[0].vx += time/10+1;
     }
     if(keys["KeyW"] && players[0].onGround){
-        players[0].vy = -15;
+        players[0].vy = -10+time/25;
     }
     //描画
     render();
