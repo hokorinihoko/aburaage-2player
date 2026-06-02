@@ -145,19 +145,19 @@ function drawGame(player,world){
         const drawY = p.y - world.cameraY;
         switch(p.type){
             case "normal":
-                ctx.fillStyle = "#00ffcc88";
+                ctx.fillStyle = "#00ffcca8";
                 break;
             case "spring":
-                ctx.fillStyle = "#cc00ff88";
+                ctx.fillStyle = "#cc00ffa8";
                 break;
             case "moving":
-                ctx.fillStyle = "#00ccff88";
+                ctx.fillStyle = "#00ccffa8";
                 break;
             case "ice":
                 ctx.fillStyle = "#00ffcc";
                 break;
             case "springmoving":
-                ctx.fillStyle = "#ccc0ff88";
+                ctx.fillStyle = "#ccc0ffa8";
                 break;
             case "springice":
                 ctx.fillStyle = "#cc00ff";
